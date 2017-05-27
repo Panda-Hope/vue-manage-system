@@ -22,7 +22,7 @@
 
 
 ## 目录结构介绍 ##
-
+    .
 	|-- build                            // webpack配置文件
 	|-- config                           // 项目打包路径
 	|-- src                              // 源码目录
@@ -49,7 +49,7 @@
 	|-- .gitignore                       // 忽略的文件
 	|-- index.html                       // 入口html文件
 	|-- package.json                     // 项目及工具的依赖配置文件
-	|-- README.md                        // 说明
+	`-- README.md                        // 说明
 
 
 ## 安装步骤 ##
