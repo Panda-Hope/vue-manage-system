@@ -26,30 +26,67 @@
 	|-- build                            // webpack配置文件
 	|-- config                           // 项目打包路径
 	|-- src                              // 源码目录
-	|   |-- components                   // 组件
-	|       |-- common                   // 公共组件
-	|           |-- Header.vue           // 公共头部
-	|           |-- Home.vue           	 // 公共路由入口
-	|           |-- Sidebar.vue          // 公共左边栏
-	|		|-- page                   	 // 主要路由页面
-	|           |-- BaseCharts.vue       // 基础图表
-	|           |-- BaseForm.vue         // 基础表单
-	|           |-- BaseTable.vue        // 基础表格
-	|           |-- Login.vue          	 // 登录
-	|           |-- Markdown.vue         // markdown组件
-	|           |-- MixCharts.vue        // 混合图表
-	|           |-- Readme.vue           // 自述组件
-	|           |-- Upload.vue           // 图片上传
-	|           |-- VueEditor.vue        // 富文本编辑器
-	|           |-- VueTable.vue         // vue表格组件
-	|   |-- App.vue                      // 页面入口文件
-	|   |-- main.js                      // 程序入口文件，加载各种公共组件
-	|-- .babelrc                         // ES6语法编译配置
+    |   |-- api                          // QQ音乐Api分析文件
+    |       |-- index.js                 
+    |   |-- assets                       // 图片资源文件
+	|   |-- components                   // 组件
+	|       |-- fallback.vue             // 公用后退组件
+	|       |-- header.vue           	 // 重写Mini-Ui头部组件，来实现更多效果
+	|       |-- index.vue                // 首页界面
+    |       |-- list.vue                 // 公用歌曲列表组件
+    |       |-- lyrics.vue               // 歌词组件
+    |       |-- play-fixed.vue           // 底部固定歌曲播放组件
+    |       |-- playing.vue              // 歌曲播放页面
+    |       |-- radio.vue                // 电台界面
+    |       |-- ranklist.vue             // 歌曲排行榜界面
+    |       |-- recommend.vue            // 推荐歌曲界面
+    |       |-- search.vue               // 搜索界面
+    |       |-- singer.vue               // 歌手界面
+    |       |-- singerlist.vue           // 歌手列表界面
+    |       |-- slider.vue               // 歌词滑动组件
+    |       |-- special.vue              // 特殊界面用于使用Iframe包含封面等QQ音乐原生界面
+    |       |-- toplist.vue              // QQ音乐巅峰榜界面
+    |   |-- mixin                        // 全局mixin方法
+    |       |-- index.js          
+    |   |-- router                       // Vue 路由
+    |       |-- index.js
+    |   |-- sass                         // css文件夹，采用Sass进行预编译
+    |       |-- packages                 // Mint-Ui文件夹，覆盖Mint-Ui原有样式
+    |            |-- cell.scss
+    |            |-- header.scss
+    |            |-- index.scss
+    |            |-- navbar.scss
+    |            |-- search.scss
+    |       |-- themes                   // APP主题CSS，未来将增加主题切换功能
+    |           |-- index.scss
+    |       |-- transition               // 全局公用Transition, Animation
+    |            |-- index.scss
+    |       |-- dimension.scss           // 阿里SUI, Rem屏幕适应变化css(暂未使用)
+    |       |-- index.scss               // Sass 入口文件
+    |       |-- mixins.scss              // Sass 公用全局Mixin
+    |       |-- normalize.scss           // Normalize.css
+    |       |-- page.scss                // 页面布局css
+    |       |-- scaffold.scss            // scaffold css 设置基本全局样式
+    |       |-- util.scss                // 公用全局Sass组件
+    |       |-- var.scss                 // 全局Sass变量，这里使用sass-resources-loader向全局注入Sass变量
+    |   |-- store                        // Vuex Store文件，APP核心所在
+    |       |-- index.js       
+    |   |-- util                         // 全局公用函数
+    |       |-- index.js                 
+	|   |-- App.vue                      // App入口文件
+    |   |-- filter.js                    // 注册全局Vue filter
+	|   |-- main.js                      // 程序入口文件，加载Vuex,Vue-router等插件
+    |   |-- mintUi.js                    // Mint-Ui配置文件
+    |   |-- test                         // 测试目录，暂未使用
+	|-- .babelrc                         // ES6语法编译配置
 	|-- .editorconfig                    // 代码编写规格
-	|-- .gitignore                       // 忽略的文件
-	|-- index.html                       // 入口html文件
+	|-- .eslintignore                    // Eslint 忽略的文件
+    |-- .eslintrc.js                     // EsLint 配置 暂未使用 
+    |-- .gitignore                       // git ingnore
+    |-- .postcssrc.js                    // post css 配置文件
+	|-- README.md                        // README
+	|-- index.html                       // 入口html文件
 	|-- package.json                     // 项目及工具的依赖配置文件
-	|-- README.md                        // 说明
 
 
 ## 安装步骤 ##
